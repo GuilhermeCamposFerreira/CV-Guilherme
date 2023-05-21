@@ -1,0 +1,51 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; /*faz com que o tamanho total da caixa seja o valor definido. Fazendo com que ao adicionar um padding ou border, o tamanho da caixa continue o mesmo.*/
+}
+
+body {
+  background-color: #121215;
+  color: #aeaeae;
+  font-family: 'Roboto', sans-serif; /*primeira opção, segunda opção*/
+}
+
+nav {
+  padding: 64px;
+
+}
+
+.memory {
+  display: flex; /*elementos se tornam flexiveis*/
+  flex-direction: column; /*coloca o display flex em esquema de coluna, deixando de usar o esquema de linhas*/
+
+  gap: 16px; /*espaçamento entre elementos*/
+
+  text-decoration: none; /*remove a barra de link que fica em baixo das letras*/
+  margin-bottom: 64px;
+}
+
+/*Seleciona a tag small da classe memory*/
+.memory small {
+  color: #bebebf;
+  font-size: 12px;
+}
+
+.memory h1 {
+  color: #aeaeae;
+  font-size: 32px;
+}
+
+.memory img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover; /*mantém a proporção da imagem (dá zoom na imagem para n distorcer)*/
+  border-radius: 8px;
+}
+
+.memory p {
+  font-size: 18px;
+  color: #bebebf;
+  line-height: 28px; /*espaçamento entre linhas*/
+}
+
